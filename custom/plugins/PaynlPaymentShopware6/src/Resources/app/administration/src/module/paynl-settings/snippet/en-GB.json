@@ -1,0 +1,53 @@
+{
+    "paynlDefault": {
+        "error": "Error",
+        "success": "Success"
+    },
+    "paynlSettings": {
+        "general": {
+            "name": "Pay. plugin",
+            "title": "Pay. plugin",
+            "description": "Pay. plugin",
+            "mainMenuItemGeneral": "Pay. payments"
+        },
+        "settingsForm": {
+            "save": "Save",
+            "installPaymentMethods": "Install payment methods",
+            "testApiKeys": "Test API Keys"
+        }
+    },
+    "paynlValidation": {
+        "error": {
+            "paymentMethodsInstallLabel": "Installation error!",
+            "paymentMethodsInstallMessage": "Could not install payment methods.",
+            "wrongCredentials": "Please insert credentials data.",
+            "shouldNotBeBlank": "The field cannot be empty."
+        },
+        "messages": {
+            "paymentMethodsSuccessfullyInstalled": "Payment methods were successfully added.",
+            "emptyCredentialsError": "Credentials cannot be empty!",
+            "settingsSavedSuccessfully": "Configurations were successfully saved.",
+            "wrongCredentials": "Wrong credentials!",
+            "correctCredentials": "Correct credentials!"
+        }
+    },
+
+    "sw-privileges": {
+        "permissions": {
+            "parents": {
+                "paynl": "PAY. Plugin"
+            },
+            "paynl": {
+                "label": "PAY. Plugin settings"
+            },
+            "paynl_transactions": {
+                "label": "PAY. Transactions"
+            }
+        }
+    },
+
+    "paynl-instore-options": {
+        "checkout": "Choose in checkout",
+        "checkout_save": "Choose in checkout and save"
+    }
+}

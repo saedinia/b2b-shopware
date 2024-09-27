@@ -1,0 +1,130 @@
+{
+    "packages": [
+        {
+            "name": "paynl/sdk",
+            "version": "v1.5.15",
+            "version_normalized": "1.5.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paynl/sdk.git",
+                "reference": "c801462646b8182677c00d6c0a39a505266067b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paynl/sdk/zipball/c801462646b8182677c00d6c0a39a505266067b4",
+                "reference": "c801462646b8182677c00d6c0a39a505266067b4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php-curl-class/php-curl-class": "^8.3"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^1.0",
+                "phpunit/phpunit": "^4.8"
+            },
+            "suggest": {
+                "ext-simplexml": "*"
+            },
+            "time": "2020-06-18T14:33:40+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Paynl\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andy Pieters",
+                    "email": "andy@pay.nl"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/paynl/sdk/issues",
+                "source": "https://github.com/paynl/sdk/tree/master"
+            },
+            "install-path": "../paynl/sdk"
+        },
+        {
+            "name": "php-curl-class/php-curl-class",
+            "version": "8.10.0",
+            "version_normalized": "8.10.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-curl-class/php-curl-class.git",
+                "reference": "c97c96d5d422b4085aba32ace096c3e404dde607"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-curl-class/php-curl-class/zipball/c97c96d5d422b4085aba32ace096c3e404dde607",
+                "reference": "c97c96d5d422b4085aba32ace096c3e404dde607",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "ext-gd": "*",
+                "phpunit/phpunit": "*",
+                "squizlabs/php_codesniffer": "*"
+            },
+            "suggest": {
+                "ext-mbstring": "*"
+            },
+            "time": "2021-06-23T14:34:00+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Curl\\": "src/Curl/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Unlicense"
+            ],
+            "authors": [
+                {
+                    "name": "Zach Borboa"
+                }
+            ],
+            "description": "PHP Curl Class makes it easy to send HTTP requests and integrate with web APIs.",
+            "homepage": "https://github.com/php-curl-class/php-curl-class",
+            "keywords": [
+                "API-Client",
+                "api",
+                "class",
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http-client",
+                "http-proxy",
+                "json",
+                "php",
+                "php-curl",
+                "php-curl-library",
+                "proxy",
+                "requests",
+                "restful",
+                "web-scraper",
+                "web-service",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/php-curl-class/php-curl-class/issues",
+                "source": "https://github.com/php-curl-class/php-curl-class/tree/8.10.0"
+            },
+            "install-path": "../php-curl-class/php-curl-class"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

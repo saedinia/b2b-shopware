@@ -1,0 +1,46 @@
+{
+  "name": "paynl/shopware6-plugin",
+  "description": "Pay. Shopware Plugin",
+  "version": "v1.6.3",
+  "type": "shopware-platform-plugin",
+  "extra": {
+    "shopware-plugin-class": "PaynlPayment\\Shopware6\\PaynlPaymentShopware6",
+    "plugin-icon": "src/Resources/public/plugin.png",
+    "label": {
+      "de-DE": "Pay. payments",
+      "en-GB": "Pay. payments"
+    },
+    "description": {
+      "de-DE": "Pay. Payment Shopware Plugin",
+      "en-GB": "Pay. Payment Shopware Plugin"
+    },
+    "manufacturerLink": {
+      "de-DE": "https://pay.nl",
+      "en-GB": "https://pay.nl"
+    },
+    "supportLink": {
+      "de-DE": "https://docs.pay.nl/plugins#shopware-six",
+      "en-GB": "https://docs.pay.nl/plugins#shopware-six"
+    }
+  },
+  "require": {
+    "paynl/sdk": "1.5.15",
+    "shopware/core": "^6.4",
+    "shopware/storefront": "^6.4"
+  },
+  "minimum-stability": "RC",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pay.",
+      "email": "support@pay.nl"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "PaynlPayment\\Shopware6\\": "src/",
+      "Paynl\\": "vendor/paynl/sdk/src/",
+      "Curl\\": "vendor/php-curl-class/php-curl-class/src"
+    }
+  }
+}

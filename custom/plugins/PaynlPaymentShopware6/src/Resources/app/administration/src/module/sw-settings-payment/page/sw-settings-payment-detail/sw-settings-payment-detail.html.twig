@@ -1,0 +1,37 @@
+{% block sw_settings_payment_detail_content_card %}
+    {% parent %}
+
+    <sw-card :title="$tc('paymentSurchargeSettings.titleSurchargeSettingsCard')" :isLoading="isLoading">
+        <template v-if="!isLoading">
+            <sw-container columns="3fr 1fr" gap="0px 30px">
+                {% block paynl_payment_surcharge_settings_payment_detail_content_field_type %}
+                    <sw-select-field
+                        v-model:value="paymentSurcharge.type"
+                        validation="required"
+                        required
+                        :label="$tc('paymentSurchargeSettings.labelType')"
+                        :disabled="isLoading">
+                        <option v-for="option in surchargeTypes" :key="option.value" :value="option.value">{{ option.label }}</option>
+                    </sw-select-field>
+                {% endblock %}
+                {% block paynl_payment_surcharge_settings_payment_detail_content_field_amount %}
+                    <sw-number-field
+                              :min="0"
+                              :label="$tc('paymentSurchargeSettings.labelAmount')"
+                              :placeholder="$tc('paymentSurchargeSettings.placeholderAmount')"
+                              v-model:value="paymentSurcharge.amount">
+                    </sw-number-field>
+                {% endblock %}
+            </sw-container>
+            <sw-container columns="1fr 1fr" gap="0px 30px">
+                {% block paynl_payment_surcharge_settings_payment_detail_content_field_order_value_limit %}
+                    <sw-number-field
+                              :min="0"
+                              :label="$tc('paymentSurchargeSettings.labelOrderValueLimit')"
+                              v-model:value="paymentSurcharge.orderValueLimit">
+                    </sw-number-field>
+                {% endblock %}
+            </sw-container>
+        </template>
+    </sw-card>
+{% endblock %}

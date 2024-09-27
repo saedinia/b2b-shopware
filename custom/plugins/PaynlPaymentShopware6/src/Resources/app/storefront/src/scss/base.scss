@@ -1,0 +1,99 @@
+.paynl-payment-methods-custom-styles .payment-method {
+    position: relative;
+}
+
+.paynl-payment-methods-custom-styles .payment-method,
+.paynl-payment-methods-custom-styles .payment-method .paynl-payment-method-extra-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.paynl-payment-methods-custom-styles .payment-method .custom-control-label.payment-method-label,
+.paynl-payment-methods-custom-styles .payment-method .form-check-label.payment-method-label {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 0;
+}
+
+.paynl-payment-methods-custom-styles .payment-method .custom-control-label.payment-method-label:before,
+.paynl-payment-methods-custom-styles .payment-method .custom-control-label.payment-method-label:after {
+    top: 20%;
+}
+
+.paynl-payment-methods-custom-styles .payment-method .form-check-label.payment-method-label:before,
+.paynl-payment-methods-custom-styles .payment-method .form-check-label.payment-method-label:after {
+    top: 20%;
+}
+
+.paynl-payment-methods-custom-styles .payment-method .payment-method-image {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.paynl-payment-methods-custom-styles .payment-method .payment-form-group {
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.paynl-payment-methods-custom-styles .break {
+    display: flex;
+    flex-basis: 100%;
+    height: 0;
+}
+
+.paynl-paynl-payment-tooltip.do_not_show {
+    display: none !important;
+}
+
+.paynl-payment-method-extra {
+    display: none;
+}
+
+.paynl-payment-methods-custom-styles .paynl-payment-method-extra.active {
+    display: flex;
+    justify-content: space-between;
+}
+
+.paynl-payment-method-extra.active {
+    display: block;
+}
+
+.custom-control.custom-select.invalid,
+.paynl-change-payment-method.invalid,
+.form-control.invalid {
+    border-color: #f00;
+}
+
+.paynl-payment-methods-custom-styles .payment-method-description {
+    width: 100%;
+}
+
+.paynl-process-message {
+    margin: 5px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .paynl-payment-methods-custom-styles .payment-method,
+    .paynl-payment-methods-custom-styles .payment-method .paynl-payment-method-extra-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .paynl-payment-methods-custom-styles .payment-method .paynl-payment-method-extra-wrapper {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .paynl-payment-methods-custom-styles .payment-method .paynl-payment-method-extra-wrapper .paynl-payment-method-extra {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .paynl-paynl-payment-tooltip.show_only_desktop {
+        display: none;
+    }
+}

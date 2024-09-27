@@ -1,0 +1,53 @@
+{
+    "paynlDefault": {
+        "error": "Fehler",
+        "success": "Erfolg"
+    },
+    "paynlSettings": {
+        "general": {
+            "name": "Pay. plugin",
+            "title": "Pay. plugin",
+            "description": "Pay. plugin",
+            "mainMenuItemGeneral": "Pay. Zahlung"
+        },
+        "settingsForm": {
+            "save": "Speichern",
+            "installPaymentMethods": "Zahlungsarten installieren",
+            "testApiKeys": "API-Schlüssel testen"
+        }
+    },
+    "paynlValidation": {
+        "error": {
+            "paymentMethodsInstallLabel": "Fehler beim Installieren!",
+            "paymentMethodsInstallMessage": "Zahlungsarten konnten nicht installiert werden.",
+            "wrongCredentials": "Bitte geben Sie die Anmeldeinformationen ein.",
+            "shouldNotBeBlank": "Das Feld darf nicht leer sein."
+        },
+        "messages": {
+            "paymentMethodsSuccessfullyInstalled": "Zahlungsmethoden wurden erfolgreich hinzugefügt.",
+            "emptyCredentialsError": "Anmeldeinformationen dürfen nicht leer sein!",
+            "settingsSavedSuccessfully": "Konfigurationen wurden erfolgreich gespeichert.",
+            "wrongCredentials": "Falsche Anmeldeinformationen!",
+            "correctCredentials": "Link erfolgreich!"
+        }
+    },
+
+    "sw-privileges": {
+        "permissions": {
+            "parents": {
+                "paynl": "PAY. Plugin"
+            },
+            "paynl": {
+                "label": "PAY. Plugin-Einstellungen"
+            },
+            "paynl_transactions": {
+                "label": "PAY. Transaktionen"
+            }
+        }
+    },
+
+    "paynl-instore-options": {
+        "checkout": "In der Kasse auswählen",
+        "checkout_save": "An der Kasse auswählen und sparen"
+    }
+}

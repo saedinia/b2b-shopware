@@ -1,0 +1,24 @@
+{% sw_extends '@Storefront/storefront/page/checkout/confirm/index.html.twig' %}
+
+{% block page_checkout_confirm_form_submit %}
+    <div class="paynl-process-message d-none">{{ 'checkout.messages.completePaymentPin'|trans }}</div>
+    {{ parent() }}
+{% endblock %}
+
+{% set configs = page.footer.extensions.PAY_custom_data.configs %}
+{% set isRestoreShoppingCart = configs.PaynlPaymentShopware6.config.restoreShoppingCart %}
+
+{% block page_checkout_aside_actions %}
+    {% if isRestoreShoppingCart %}
+        {% set formAddHistoryOptions = {
+            entries: [{
+                state: {},
+                title: 'account.ordersTitle'|trans,
+                url: path('frontend.checkout.Paynl.history.back')
+            }]
+        } %}
+    {% endif %}
+
+    {{ parent() }}
+{% endblock %}
+

@@ -1,0 +1,30 @@
+{% sw_extends '@Storefront/storefront/page/account/profile/index.html.twig' %}
+
+{% block page_account_profile_personal_form %}
+    <form id="profilePersonalForm"
+          method="post"
+          data-form-csrf-handler="true"
+          action="{{ path('frontend.account.profile.save') }}"
+          data-form-validation="true">
+
+        {% if not page.footer.extensions.PAY_custom_data.isSW65 %}
+            {% block page_account_profile_personal_form_csrf %}
+                {{ parent() }}
+            {% endblock %}
+        {% endif %}
+
+        {% block page_account_profile_personal_fields %}
+            {{ parent() }}
+        {% endblock %}
+
+        {% sw_include '@Storefront/storefront/page/account/profile/paynl_profile_kvk_coc_number_block.html.twig' %}
+
+        {% block page_account_profile_personal_required %}
+            {{ parent() }}
+        {% endblock %}
+
+        {% block page_account_profile_personal_action_buttons %}
+            {{ parent() }}
+        {% endblock %}
+    </form>
+{% endblock %}

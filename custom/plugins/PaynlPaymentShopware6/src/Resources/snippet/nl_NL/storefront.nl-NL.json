@@ -1,0 +1,33 @@
+{
+    "checkout": {
+        "statuses": {
+            "cancelled": "Betaling geannuleerd",
+            "denied": "Betaling afgewezen",
+            "in_progress": "De betaling wordt geverifieerd door de beheerder.",
+            "paid": "Betaling geslaagd!"
+        },
+        "messages": {
+            "cancelledTransaction": "Uw betaling kon niet worden verwerkt met de gekozen betaalmethode, kies een andere betaaloptie of probeer opnieuw.",
+            "deniedTransaction": "Afgewezen door de betaaloptie (kies andere betaalmethode).",
+            "completePaymentPin" : "Rond uw betaling af op de pin terminal",
+            "orderAmountPaymentError": "Het orderbedrag voldoet niet aan de voorwaarden van deze betaalmethode.",
+            "orderDefaultError": "Er ging iets mis"
+        },
+        "labels": {
+            "changePayment": "Probeer opnieuw",
+            "dob": "Geboortedatum dd-mm-yyyy:",
+            "phone": "Telefoon:"
+        },
+        "summarySurcharge": "Betalingskosten"
+    },
+    "transactionLabels": {
+        "order": "Bestelling: "
+    },
+    "payment": {
+        "selectIssuer": "Kies uw bank"
+    },
+    "coc": {
+        "label": "KVK-nummer",
+        "placeholder": "Voer KVK-nummer in"
+    }
+}

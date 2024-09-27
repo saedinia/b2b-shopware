@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'pretty_version' => 'v1.6.3',
+        'version' => '1.6.3.0',
+        'type' => 'shopware-platform-plugin',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'reference' => NULL,
+        'name' => 'paynl/shopware6-plugin',
+        'dev' => true,
+    ),
+    'versions' => array(
+        'paynl/sdk' => array(
+            'pretty_version' => 'v1.5.15',
+            'version' => '1.5.15.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../paynl/sdk',
+            'aliases' => array(),
+            'reference' => 'c801462646b8182677c00d6c0a39a505266067b4',
+            'dev_requirement' => false,
+        ),
+        'paynl/shopware6-plugin' => array(
+            'pretty_version' => 'v1.6.3',
+            'version' => '1.6.3.0',
+            'type' => 'shopware-platform-plugin',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'reference' => NULL,
+            'dev_requirement' => false,
+        ),
+        'php-curl-class/php-curl-class' => array(
+            'pretty_version' => '8.10.0',
+            'version' => '8.10.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../php-curl-class/php-curl-class',
+            'aliases' => array(),
+            'reference' => 'c97c96d5d422b4085aba32ace096c3e404dde607',
+            'dev_requirement' => false,
+        ),
+    ),
+);
